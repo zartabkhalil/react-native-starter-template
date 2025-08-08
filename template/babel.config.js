@@ -19,6 +19,7 @@ module.exports = {
         ],
         alias: {
           '@assets': './src/assets',
+          '@auth': './src/auth',
           '@components': './src/components',
           '@constants': './src/constants',
           '@network': './src/network',

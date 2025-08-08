@@ -5,16 +5,27 @@
  * @format
  */
 
+import { SessionProvider } from '@auth/useSession';
+import CustomSafeAreaView from '@components/CustomSafeAreaView';
 import RootStack from '@navigation/RootStack';
-import { StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
+import { persistor, store } from '@store/store';
+import { StyleSheet, useColorScheme } from 'react-native';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <View style={styles.container}>
-      <RootStack/>
-    </View>
+    <CustomSafeAreaView>
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <SessionProvider>
+            <RootStack />
+          </SessionProvider>
+        </PersistGate>
+      </Provider>
+    </CustomSafeAreaView>
   );
 }
 
