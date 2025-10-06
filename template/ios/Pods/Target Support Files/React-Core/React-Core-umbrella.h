@@ -235,6 +235,7 @@
 #import "React/RCTFileRequestHandler.h"
 #import "React/RCTHTTPRequestHandler.h"
 #import "React/RCTInspectorNetworkReporter.h"
+#import "React/RCTNetworkConversions.h"
 #import "React/RCTNetworking.h"
 #import "React/RCTNetworkPlugins.h"
 #import "React/RCTNetworkTask.h"

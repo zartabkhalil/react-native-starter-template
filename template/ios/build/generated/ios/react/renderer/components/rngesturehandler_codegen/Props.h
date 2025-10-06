@@ -11,6 +11,7 @@
 
 #include <react/renderer/components/view/ViewProps.h>
 #include <react/renderer/core/PropsParserContext.h>
+#include <react/renderer/debug/DebugStringConvertible.h>
 #include <react/renderer/graphics/Color.h>
 
 namespace facebook::react {
@@ -31,7 +32,15 @@ class RNGestureHandlerButtonProps final : public ViewProps {
   bool touchSoundDisabled{false};
   Float borderWidth{0.0};
   SharedColor borderColor{};
-  std::string borderStyle{"solid"};
+  std::string borderStyle{std::string{"solid"}};
+
+  #ifdef RN_SERIALIZABLE_STATE
+  ComponentName getDiffPropsImplementationTarget() const override;
+
+  folly::dynamic getDiffProps(const Props* prevProps) const override;
+  #endif
+
+  
 };
 
 class RNGestureHandlerRootViewProps final : public ViewProps {
@@ -40,6 +49,14 @@ class RNGestureHandlerRootViewProps final : public ViewProps {
   RNGestureHandlerRootViewProps(const PropsParserContext& context, const RNGestureHandlerRootViewProps &sourceProps, const RawProps &rawProps);
 
 #pragma mark - Props
+
+  
+
+  #ifdef RN_SERIALIZABLE_STATE
+  ComponentName getDiffPropsImplementationTarget() const override;
+
+  folly::dynamic getDiffProps(const Props* prevProps) const override;
+  #endif
 
   
 };

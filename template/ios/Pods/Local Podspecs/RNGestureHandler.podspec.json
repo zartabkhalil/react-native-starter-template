@@ -20,7 +20,7 @@
     "visionos": "1.0"
   },
   "xcconfig": {
-    "OTHER_CFLAGS": "$(inherited)  -DREACT_NATIVE_MINOR_VERSION=80"
+    "OTHER_CFLAGS": "$(inherited)  -DREACT_NATIVE_MINOR_VERSION=82"
   },
   "compiler_flags": "-DRCT_NEW_ARCH_ENABLED=1",
   "dependencies": {
@@ -79,9 +79,6 @@
 
     ],
     "hermes-engine": [
-
-    ],
-    "React-hermes": [
 
     ],
     "glog": [

@@ -1,6 +1,6 @@
 {
   "name": "React-defaultsnativemodule",
-  "version": "0.80.2",
+  "version": "0.82.0-rc.5",
   "summary": "React Native Default native modules",
   "homepage": "https://reactnative.dev/",
   "license": "MIT",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/facebook/react-native.git",
-    "tag": "v0.80.2"
+    "tag": "v0.82.0-rc.5"
   },
   "source_files": "*.{cpp,h}",
   "header_dir": "react/nativemodule/defaults",
@@ -28,9 +28,6 @@
 
     ],
     "hermes-engine": [
-
-    ],
-    "React-hermes": [
 
     ],
     "glog": [
@@ -67,6 +64,9 @@
 
     ],
     "React-idlecallbacksnativemodule": [
+
+    ],
+    "React-webperformancenativemodule": [
 
     ],
     "React-RCTFBReactNativeSpec": [

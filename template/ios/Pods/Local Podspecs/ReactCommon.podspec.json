@@ -1,7 +1,7 @@
 {
   "name": "ReactCommon",
   "module_name": "ReactCommon",
-  "version": "0.80.2",
+  "version": "0.82.0-rc.5",
   "summary": "-",
   "homepage": "https://reactnative.dev/",
   "license": "MIT",
@@ -11,7 +11,7 @@
   },
   "source": {
     "git": "https://github.com/facebook/react-native.git",
-    "tag": "v0.80.2"
+    "tag": "v0.82.0-rc.5"
   },
   "header_dir": "ReactCommon",
   "pod_target_xcconfig": {
@@ -61,19 +61,19 @@
       "name": "turbomodule",
       "dependencies": {
         "React-callinvoker": [
-          "0.80.2"
+          "0.82.0-rc.5"
         ],
         "React-perflogger": [
-          "0.80.2"
+          "0.82.0-rc.5"
         ],
         "React-cxxreact": [
-          "0.80.2"
+          "0.82.0-rc.5"
         ],
         "React-jsi": [
-          "0.80.2"
+          "0.82.0-rc.5"
         ],
         "React-logger": [
-          "0.80.2"
+          "0.82.0-rc.5"
         ],
         "hermes-engine": [
 
@@ -84,7 +84,7 @@
           "name": "bridging",
           "dependencies": {
             "React-jsi": [
-              "0.80.2"
+              "0.82.0-rc.5"
             ],
             "hermes-engine": [
 
@@ -105,13 +105,13 @@
           },
           "dependencies": {
             "React-debug": [
-              "0.80.2"
+              "0.82.0-rc.5"
             ],
             "React-featureflags": [
-              "0.80.2"
+              "0.82.0-rc.5"
             ],
             "React-utils": [
-              "0.80.2"
+              "0.82.0-rc.5"
             ]
           }
         }
